@@ -17,6 +17,7 @@
                 height: 400%;
                 background-color: red;
             }
+            /* Position Fixed
             #boxOne{
                 height: 300px;
                 width: 300px;
@@ -28,15 +29,37 @@
                 width: 300px;
                 background-color: green;
                 position: fixed;
+                top:10px;
+            } */
+            
+            /* 부모 박스 */
+            .abs-box{
+                width:400px;
+                height:400px;
+                background-color: yellow;
+                position: relative;
+            }
+            /* 자식 박스 */
+            .abs-child{
+                width:100px;
+                height:100px;
+                background-color: green;
+                position: absolute;
+                right:10px;
+                top:10px;
             }
         </style>
     </head>
     <body>
-        <div id="boxOne">
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
+        <!-- Position Fixed
+            <div id="boxOne">
             <div class="box-child"></div>
         </div>
         <div id="boxTwo">
             <div class="box-child"></div>
-        </div>
+        </div> -->
     </body>
 </html>
